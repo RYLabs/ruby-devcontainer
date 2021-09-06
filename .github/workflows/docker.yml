@@ -35,7 +35,7 @@ jobs:
           builder: ${{ steps.ruby2_6_3.outputs.name }}
           context: .
           build-args: |
-            RUBY_VERSION=2.6.3
+            VARIANT=2.6.3
           push: ${{ github.event_name != 'pull_request' }}
           tags: rylabs/ruby-devcontainer:2.6.3
       -
@@ -45,7 +45,7 @@ jobs:
           builder: ${{ steps.ruby2_6_6.outputs.name }}
           context: .
           build-args: |
-            RUBY_VERSION=2.6.6
+            VARIANT=2.6.6
           push: ${{ github.event_name != 'pull_request' }}
           tags: rylabs/ruby-devcontainer:2.6.6
       -
@@ -55,6 +55,6 @@ jobs:
           builder: ${{ steps.ruby2_7_3.outputs.name }}
           context: .
           build-args: |
-            RUBY_VERSION=2.7.3
+            VARIANT=2.7.3
           push: ${{ github.event_name != 'pull_request' }}
           tags: rylabs/ruby-devcontainer:2.7.3
