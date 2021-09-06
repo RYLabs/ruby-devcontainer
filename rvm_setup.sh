@@ -2,7 +2,7 @@
 
 set -xe
 
-USERNAME=$2
+USERNAME=$1
 
 mkdir -p /home/${USERNAME}/data/rvm
 
