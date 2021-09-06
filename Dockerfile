@@ -36,6 +36,6 @@ RUN rm -rf /tmp/library-scripts
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
-COPY .devcontainer/rvm_setup.sh /tmp
+COPY rvm_setup.sh /tmp
 RUN bash --login /tmp/rvm_setup.sh "vscode" \
     && rm /tmp/rvm_setup.sh
