@@ -2,6 +2,9 @@
 ARG VARIANT=2
 FROM ruby:${VARIANT}
 
+# Copy library scripts to execute
+COPY library-scripts/*.sh library-scripts/*.env /tmp/library-scripts/
+
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
 # [Option] Upgrade OS packages to their latest versions
