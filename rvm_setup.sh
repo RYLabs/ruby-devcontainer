@@ -13,4 +13,4 @@ sudo -u ${USERNAME} ln -nfs /home/${USERNAME}/data/rvm /home/${USERNAME}/.rvm
 chown ${USERNAME}:${USERNAME} -R /home/${USERNAME}/data
 
 # Enable RVM mixed mode so gems are stored in ~/.rvm (actually, ~/data/rvm)
-sudo -u ${USERNAME} bash --login -c 'rvm user gemsets'
+sudo -u ${USERNAME} -i rvm user gemsets
